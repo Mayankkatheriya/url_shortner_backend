@@ -41,7 +41,7 @@ server.post("/url-shortner", (req, res) => {
     fs.writeFileSync("urlMap.json", JSON.stringify(fileData));
     res.json({
       success: true,
-      shortUrl: `http://localhost:10000/${shortUrl}`,
+      shortUrl: `https://url-shortner-backend-4esc.onrender.com/${shortUrl}`,
     });
   } else {
     res.json({
